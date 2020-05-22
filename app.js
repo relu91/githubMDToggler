@@ -31,8 +31,8 @@ if(pageType === "wiki"){
 }else{
     // Init UI
     let actions = document.getElementById("discussion_bucket").getElementsByClassName("timeline-comment-actions")
-    let timelineItems = document.getElementById("discussion_bucket").getElementsByClassName("js-timeline-item")
-    let commentBodies = document.getElementById("discussion_bucket").getElementsByClassName("comment-body")
+    
+    let commentBodies = document.getElementById("discussion_bucket").querySelectorAll(".comment-body:not(.js-preview-body)")
 
     const toggleButtons = []
 
